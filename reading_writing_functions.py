@@ -89,6 +89,6 @@ def initialize_tree(G):
     
     
     
-    T = ([v_0_1, v_0_2], [e_0])
+    T_0 = ([v_0_1, v_0_2], [e_0], w_0)
     
-    return T
+    return T_0
