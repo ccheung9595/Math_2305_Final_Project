@@ -32,5 +32,5 @@ def min_cost_edge(G, T):
     for t in weights:
         if t < minimum_weight:
             minimum_weight = t
-            
+          
     return minimum_weight
