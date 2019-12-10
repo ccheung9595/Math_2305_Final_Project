@@ -6,7 +6,7 @@ graph = input('Please provide the name of the graph to run the TSP on: ')
 
 MST = prims(graph)
 
-T = (MST[0], MST[1])
+T = (MST[0],  MST[1])
 
 e = sum(MST[2])
 
