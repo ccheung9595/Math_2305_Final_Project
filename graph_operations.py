@@ -1,15 +1,12 @@
-def min_cost_edge(G, T):
+def min_cost(G, T):
 
     edges_0 = []
-    
-    
-    
+  
     for e in G[1]:
         for v in T[0]:
             if v in e and e not in T[1]:
               edges_0.append(e)
-        
-    
+     
     edges = []
     
     for num in edges_0:
@@ -18,7 +15,7 @@ def min_cost_edge(G, T):
         elif num in edges:
             edges.remove(num)
             
-    weights = []
+        weights = []
     
     for j in G[1]:
         for i in edges:
@@ -32,5 +29,9 @@ def min_cost_edge(G, T):
     for t in weights:
         if t < minimum_weight:
             minimum_weight = t
-          
-    return minimum_weight
+    
+
+    minimum_edge = edges[weights.index(minimum_weight)]    
+    minimum = [minimum_edge, minimum_weight]
+    
+    return minimum
