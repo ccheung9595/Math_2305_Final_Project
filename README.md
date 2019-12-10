@@ -39,7 +39,9 @@ The third column will be the weight of the edge on the same row.
 ```
 
 The first column is [1, 1, 1, 2, 3, 3, 4, 5, 5]
+
 The second column is [3, 2, 4, 6, 4, 5, 6, 6, 7]
+
 The third column is [1, 5, 4, 6, 3, 2, 8, 7, 9]
 
 For the first row, [1, 3, 1], (1,3) represents an edge with 1 and 3 each being a vertex in the graph. 1 represents the weight of the edge between vertices 1 and 3.
