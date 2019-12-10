@@ -2,7 +2,7 @@
 
 from Functions.prims import prims
 
-graph = input('Please provide the name of the graph to run the TSP on: ')
+graph = input('Please provide the file name of the graph to run the TSP on: ')
 
 MST = prims(graph)
 
