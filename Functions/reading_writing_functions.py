@@ -65,6 +65,8 @@ def get_graph(textfile):
 
 
 def initialize_tree(G):
+    # initializes tree at vertices and edge with the lowest weight on the graph
+    
     
     # intializes the minimum_weight variable
     minimum_weight = G[2][0]
@@ -76,13 +78,18 @@ def initialize_tree(G):
             minimum_weight = G[2][i]
             
             
-    
+    # finds the location of the above determined minimum weight
+    # in the graph
     minimum_weight_location = G[2].index(minimum_weight)
     
-    
-    v_0_1 = G[1][minimum_weight_location][0]
+    # finds and assigns the vertices on graph where the minimum weight is located
+    v_0_1 = G[1][minimum_weight_location][0] 
     v_0_2 = G[1][minimum_weight_location][1]
+    
+    # finds and assigns the edge on the graph where the minimum weight is located
     e_0 = G[1][minimum_weight_location]
+    
+    
     w_0 = minimum_weight
     
     #list(v_0_1)
@@ -92,7 +99,7 @@ def initialize_tree(G):
     
     
     
-    
+    # creates list of initial vertices, edge, and weight on the graph where the lowest weight is located
     T_0 = ([v_0_1, v_0_2], [e_0], w_0)
     
     return T_0
