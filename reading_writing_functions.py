@@ -62,7 +62,7 @@ def get_graph(textfile):
     
     return G
 
-###################################################
+#####################################################
 
 def initialize_tree(G):
 
@@ -86,7 +86,6 @@ def initialize_tree(G):
     #list(v_0_2)
     list(e_0)
     w_0.tolist()
-    
     
     
     
