@@ -2,7 +2,8 @@ from reading_writing_functions import get_graph
 from reading_writing_functions import initialize_tree
 
 
-from graph_operations import min_cost_edge
+from graph_operations import min_cost
+
 
 G = get_graph("graph1.txt")
 T = initialize_tree(G)
@@ -10,16 +11,14 @@ T = initialize_tree(G)
 
                 
 
-
 while len(T[0]) != len(G[0]):
-
-    e = min_cost_edge(G, T)
+    
+    minimum = min_cost(G, T)
        
-    minimum_edge = G[1][G[2].index(e)]
+
     
-    T[1].append(minimum_edge)
+    T[1].append(minimum[0])
     
-    print(T)
     
     vertices = []
     
@@ -27,7 +26,6 @@ while len(T[0]) != len(G[0]):
         for j in range(2):
             vertices.append(T[1][i][j])
             
-    print(vertices)
     
     for l in vertices:
         if l not in T[0]:
